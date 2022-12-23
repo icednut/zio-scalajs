@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Simple ZIO ScalaJS Skeleton",
   "scripts": {
-    "build": "./sbt fullLinkJS && NODE_ENV=production webpack --mode production",
+    "build": "./sbt fullLinkJS && NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider webpack --mode production",
     "build:dev": "./sbt fastLinkJS",
     "test": "./sbt test",
     "start": "webpack serve --mode development --hot --open --disable-host-check --host=\"0.0.0.0\""
